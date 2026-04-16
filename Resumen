@@ -1,0 +1,16 @@
+Aplicación de los montículos mínimos en el algoritmo de Dijkstra
+
+Los montículos mínimos son muy importantes en el algoritmo de Dijkstra porque permiten
+obtener rápidamente el nodo con la distancia acumulada más pequeña desde el nodo inicial.
+
+En Dijkstra, cada vez que se calculan nuevas distancias hacia los nodos vecinos, se necesita
+seleccionar cuál es el siguiente nodo más cercano que todavía no ha sido procesado. Si esta
+búsqueda se hiciera revisando todos los nodos manualmente, el algoritmo sería más lento.
+
+Al utilizar un montículo mínimo, el nodo con la menor distancia siempre queda en la raíz,
+por lo que puede obtenerse de forma eficiente con una operación similar a eliminarMin().
+Además, cuando aparece una nueva distancia candidata, esta puede insertarse en el montículo
+y reacomodarse con el proceso correspondiente.
+
+Gracias a esta estructura, el algoritmo de Dijkstra mejora su eficiencia y puede encontrar
+caminos mínimos en grafos de forma más rápida que con una búsqueda lineal de mínimos.
